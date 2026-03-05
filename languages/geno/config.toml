@@ -1,0 +1,4 @@
+name = "Geno"
+grammar = "geno"
+path_suffixes = ["geno"]
+line_comments = ["//"]

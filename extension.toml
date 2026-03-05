@@ -1,0 +1,11 @@
+id = "geno"
+name = "Geno"
+version = "0.1.0"
+schema_version = 1
+authors = ["John Lyon-Smith <john@escapegallery.net>"]
+description = "Geno schema language support."
+repository = "https://github.com/jlyonsmtih/zed-geno"
+
+[grammars.geno]
+repository = "https://github.com/jlyonsmith/tree-sitter-geno"
+rev = "f39b2cad212d54163650efd640700023506f6a30"
