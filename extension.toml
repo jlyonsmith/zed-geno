@@ -8,4 +8,4 @@ repository = "https://github.com/jlyonsmtih/zed-geno"
 
 [grammars.geno]
 repository = "https://github.com/jlyonsmith/tree-sitter-geno"
-rev = "f39b2cad212d54163650efd640700023506f6a30"
+rev = "01117f88116c5ed96d64d13d3b2daccc995017aa"
