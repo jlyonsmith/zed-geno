@@ -13,8 +13,10 @@ release OPERATION:
     set_color red; echo "💥 "$argv; set_color normal
   end
 
-  if test ! -e "tree-sitter.json"
-    error "tree-sitter.json file not found"
+  set root_file "extension.toml"
+
+  if test ! -e $root_file
+    error "$root_file file not found"
     exit 1
   end
 
@@ -78,9 +80,9 @@ release OPERATION:
   info "Finished release of '"$name"' on branch '"$branch"'. You can publish the crate."
   exit 0
 
-del-tag:
+del-tag TAG:
   #!/usr/bin/env fish
-  set tagName (cat "scratch/version.tag.txt")
+  set tagName {{TAG}}
 
   git tag -d $tagName
   git push origin --delete $tagName
