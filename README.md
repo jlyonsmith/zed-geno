@@ -5,7 +5,7 @@ Adds [Geno](https://crates.io/crates/geno) support to Zed.
 ## Features
 
 - Syntax highlighting for all Geno files
-- Supports comments, literals, builtins and more
+- Supports all Geno syntax elements
 - Automatically activated for `.geno` files
 
 ## Credits

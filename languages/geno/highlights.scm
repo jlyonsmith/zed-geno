@@ -10,9 +10,9 @@
 (float_type) @type
 
 [
-  "meta"
   "enum"
   "struct"
+  "include"
 ] @keywoard
 
 (comment) @comment
