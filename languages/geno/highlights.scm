@@ -13,6 +13,8 @@
   "enum"
   "struct"
   "include"
-] @keywoard
+  "#"
+  "#!"
+] @keyword
 
 (comment) @comment
