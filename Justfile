@@ -38,15 +38,7 @@ release OPERATION:
   info "Pulling latest"
   git pull
 
-  if not test -e scratch/
-    info Creating scratch directory
-    mkdir scratch
-    touch scratch/.gitkeep
-    git add -f scratch/.gitkeep
-    git commit -m "Creating scratch directory"
-  end
-
-  if not stampver {{OPERATION}} -u -i version.json5
+  if not stampver -u {{OPERATION}}
     error "Unable to generation version information"
     exit 1
   end
